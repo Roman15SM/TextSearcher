@@ -1,8 +1,12 @@
 ﻿<Window x:Class="TextSearcher.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="TextSearcher" Height="350" Width="425">
     <Grid>
-        
+        <Button Content="Search" HorizontalAlignment="Left" Height="36" Margin="314,273,0,0" VerticalAlignment="Top" Width="93"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="314,43,0,0" VerticalAlignment="Top" Width="93" Height="36" Click="Browse"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="10,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Text="jygbjhbhj" FontSize="20" IsReadOnly="True" Name="FileNameTextBox" TextDecorations="{x:Null}" ToolTip="{Binding Text, ElementName=FileNameTextBox}"/>
+        <Label Content="Click Browse to choose folder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" RenderTransformOrigin="0.575,1.016" Width="288" FontSize="15" Height="28"/>
+
     </Grid>
 </Window>
